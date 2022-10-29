@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Запитайте у користувача тризначне число і виведіть його задом наперед.
+      // Для вирішення завдання вам знадобиться оператор % (залишок від ділення).
+      let userNumber = prompt("Введіть тризначне число");
+      let invertedNumber = 0;
+      let i = 0;
+      while (i != 3) {
+        invertedNumber = invertedNumber * 10 + (userNumber % 10);
+        userNumber = Math.floor(userNumber / 10);
+        i++;
+      }
+      alert(invertedNumber);
+
+      //   Або за допомогою шаблонних строк:
+      //   let invertedNumber = `${userNumber[2]}${userNumber[1]}${userNumber[0]}`;
+    </script>
+  </body>
+</html>
